@@ -12,3 +12,5 @@ while i < 5:
 
 print(f'A média do aluno foi: {c/5}')
 
+# ------
+
