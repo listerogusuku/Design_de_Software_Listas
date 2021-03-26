@@ -23,4 +23,6 @@ while i < 5:
     n = float(input('Digite um número a ser adicionado à lista: '))
     numbers.append(n)
     i+=1
-    
+
+
+
