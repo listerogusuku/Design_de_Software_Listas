@@ -56,8 +56,7 @@ while i < len(numbers_list):
                 break
         break
 
-            # pergunta2 = int(input('Você deseja ver o número guardado em qual posição da lista? ')
-        # if pergunta2 <= len(numbers_list):
+
 
 del numbers_list[0]
 
