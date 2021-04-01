@@ -67,10 +67,7 @@ print(f'Sua lista foi {numbers_list} e o número que está na posição escolhid
 '''
 
 
-
-
-
-
+'''
 lista1 = [0,1,2,3,10,12,17,21,33,45,50,75,100,87]
 lista2 = [2,3,7,8,18,13,21,35,42,49,70,100,98,52]
 
@@ -102,3 +99,27 @@ while i < len(lista1):
 # print(lista3)
 print(lista_repetidos)
 print(lista3)
+'''
+
+#JACA WARS
+
+
+import math
+
+
+v = float(input('Digite a velocidade: '))
+teta = float(input('Digite o ângulo: '))
+
+convert_graus = (math.sin(math.radians(teta)))
+multiplica_graus = 2*convert_graus
+
+g = 9.8
+d = ((v**2)*multiplica_graus)/g
+
+
+if d < 98:
+    print('Muito perto')
+elif d > 102:
+    print('Muito longe')
+else:
+    print('Acertou!')
