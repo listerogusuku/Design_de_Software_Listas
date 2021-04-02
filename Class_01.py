@@ -237,7 +237,7 @@ valor2 = int(input('Digite o valor 2: '))
 
 print(maximo_divisor_comum(valor1, valor2))
 '''
-
+'''
 
 def eh_primo(n):
     if n == 0 or n == 1:# or n == 4:
@@ -257,8 +257,17 @@ def eh_primo(n):
         # return True
     return True
 
-
 verifica = int(input('Digite um número a ser verificado: '))
 
 print(eh_primo(verifica))
+'''
 
+n= int(input('Digite um número: '))
+cont= 1
+cont2= n
+while True:
+    if cont2 // 2 == 1:
+        break
+    else:
+
+        print(f'( {n} / 2 ) = {cont2}')
