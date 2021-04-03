@@ -262,12 +262,18 @@ verifica = int(input('Digite um número a ser verificado: '))
 print(eh_primo(verifica))
 '''
 
-n= int(input('Digite um número: '))
-cont= 1
-cont2= n
-while True:
-    if cont2 // 2 == 1:
-        break
-    else:
+# n= int(input('Digite um número: '))
+# cont= 1
+# cont2= n
+# while True:
+#     if cont2 // 2 == 1:
+#         break
+#     else:
 
-        print(f'( {n} / 2 ) = {cont2}')
+#         print(f'( {n} / 2 ) = {cont2}')
+
+
+
+print((3/4)**1/3)
+
+print(4**6)
