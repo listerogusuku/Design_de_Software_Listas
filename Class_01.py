@@ -261,7 +261,7 @@ verifica = int(input('Digite um número a ser verificado: '))
 
 print(eh_primo(verifica))
 '''
-
+'''
 # n= int(input('Digite um número: '))
 # cont= 1
 # cont2= n
@@ -277,3 +277,26 @@ print(eh_primo(verifica))
 print((3/4)**1/3)
 
 print(4**6)
+
+'''
+'''
+lista = [1,2,3,4,5]
+
+for el in lista:  #for para listas é elegantasso
+    print(el)
+
+'''
+
+def filtra_bagagens(lista, altura, largura, profundidade):
+    qt = []
+    i = 0
+    while i < len(lista):
+        if lista[i][0] > altura:
+            qt.append(1)
+        elif lista[i][1] > largura:
+            qt.append(1)
+        elif lista[i][2] > profundidade:
+            qt.append(1)
+        i+=1
+    return len(qt)
+
