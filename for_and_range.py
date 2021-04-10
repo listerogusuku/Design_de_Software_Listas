@@ -226,7 +226,92 @@ import random
 #     print(random.random()) #Vai simplesmente ficar sorteando e escolher um número REAL entre zero e 1 (nesse caso)
 
 
-for i in range(10):
-    x = random.uniform(1, 7) #Vai retornar um número real entre os reais 1 e 7
-    print(x)
+# for i in range(10):
+#     x = random.uniform(1, 7) #Vai retornar um número real entre os reais 1 e 7
+#     print(x)
 
+
+
+# lista = list(range(1, 21, 2))
+
+# for i in range(10):
+#     print(lista[i])
+
+
+
+
+# lista = list(range(10))
+
+# print(lista[2:10])
+
+
+# print(lista[0:10:2])
+
+# print(lista[::-3])
+
+
+# lista = [1,2,3,4, [10,20,30,40]]
+
+# print(lista[4][2])
+
+
+# lista2 = [[[1,2], [3,4]], [5,6]]
+
+# print(lista2[0])
+
+
+# lista = []
+
+# for i in range(0,7):
+#     x = int(input(f'Digite um número {i}: '))
+#     lista.append(x)
+
+# print(lista)
+
+
+
+# lista_notas = []
+
+# soma = 0
+# for i in range(4):
+#     notas = float(input(f'Digite a nota {i}: '))
+#     soma+=notas
+#     lista_notas.append(notas)
+
+# print(f'As notas foram: {lista_notas} e a média do aluno foi {soma/len(lista_notas)}')
+
+
+'''
+lista_inteiros = []
+
+lista_pares = []
+lista_impares = []
+for i in range(5):
+    num = int(input('Digite um número inteiro: '))
+    lista_inteiros.append(num)
+    if num % 2 == 0:
+        lista_pares.append(num)
+    else:
+        lista_impares.append(num)
+
+print(f'\nA lista de números digitados por você foi: {lista_inteiros}\n')
+print(f'A lista de números pares é: {lista_pares}\n')
+print(f'A lista de números ímpares é: {lista_impares}')
+
+'''
+
+lista = []
+
+n = float(input('Digite um número a ser adicionado à lista: '))
+while n != -1:
+    lista.append(n)
+    n = float(input('Digite um número a ser adicionado à lista: '))
+
+elemento = float(input('Digite o número que você deseja procurar na lista: '))
+
+cont=0
+for i in range(len(lista)):
+    if lista[i] == elemento:
+        cont+=1
+
+print(f'O elemento {elemento} apareceu um total de {cont} vezes na lista.')
