@@ -300,18 +300,256 @@ print(f'A lista de números ímpares é: {lista_impares}')
 
 '''
 
-lista = []
+# lista = []
 
-n = float(input('Digite um número a ser adicionado à lista: '))
-while n != -1:
-    lista.append(n)
-    n = float(input('Digite um número a ser adicionado à lista: '))
+# n = float(input('Digite um número a ser adicionado à lista: '))
+# while n != -1:
+#     lista.append(n)
+#     n = float(input('Digite um número a ser adicionado à lista: '))
 
-elemento = float(input('Digite o número que você deseja procurar na lista: '))
+# elemento = float(input('Digite o número que você deseja procurar na lista: '))
 
-cont=0
-for i in range(len(lista)):
-    if lista[i] == elemento:
+# cont=0
+# for i in range(len(lista)):
+#     if lista[i] == elemento:
+#         cont+=1
+
+# print(f'O elemento {elemento} apareceu um total de {cont} vezes na lista.')
+
+
+
+
+
+# n = int(input('Digite o número que você deseja ver o fatorial: '))
+
+# c = 1
+# fatorial = 1
+
+# while c <= n:
+#     fatorial*=c
+#     c+=1
+
+# print(fatorial)
+
+
+
+# def fatorial(n):
+#     c = 1
+#     fatorial = 1
+
+#     while c <= n:
+#         fatorial*=c
+#         c+=1
+#     return fatorial
+
+# print(fatorial(5))
+
+
+# while True:
+#     palavra = input('Digite uma palavra:')
+#     if palavra == 'desisto':
+#         break
+# print('Você acertou a senha!')
+
+
+
+
+# def calcula_euler(x,n):
+#     soma = 1
+
+
+
+# def raiz_quadrada(x):
+#     cont = 0
+#     impar = 1
+#     while cont <= x:
+#         x = x - impar
+#         impar+=2
+#         cont+=1
+
+
+
+# x = int(input('Digite o número que você deseja ver a raiz: '))
+# cont = 0
+# impar = 1
+# lista_geral = []
+# while cont <= x:
+#     lista_geral.append(impar)
+#     x = x - impar
+#     impar+=2
+#     cont+=1
+
+# print(len(lista_geral))
+
+
+
+
+'''
+def raiz_quadrada(x):
+    cont = 0
+    impar = 1
+    while cont <= x:
+        if x == 0:
+            break
+        x = x - impar
+        impar+=2
+        cont+=1
+    return cont
+'''
+
+
+'''
+n = 0
+result = 0
+while n<99:
+    result += (1 / (2**n))
+    print(result)
+    n += 1
+    print(n)
+
+print(result)
+'''
+
+
+# n = int(input('Digite um número: '))
+
+# cont = 0
+# fatorial = 1
+# x = 1
+
+# while cont < n:
+
+#     fatorial *= n
+
+#     x += ((x**n) / fatorial )
+
+#     n+=1
+
+
+
+
+
+'''
+def calcula_euler(x, n):
+    cont = 0
+    fatorial = 1
+    result = 0
+    final = 0
+
+    while cont < n:
+        c = 1
+        fatorial = 1
+        while c <= n:
+            fatorial*=c
+            c+=1
+
+        # fatorial *= n
+        result += ((x**n) / fatorial )
+
+        print(result)
+
+        n+=1
         cont+=1
 
-print(f'O elemento {elemento} apareceu um total de {cont} vezes na lista.')
+        final = 1+result
+
+        return final
+
+
+print(calcula_euler(2,3))
+
+'''
+
+
+
+
+
+
+
+# def fatorial(n):
+    # c = 1
+    # fatorial = 1
+
+    # while c <= n:
+    #     fatorial*=c
+    #     c+=1
+    # return fatorial
+
+# print(fatorial(5))
+
+
+
+'''
+def calcula_euler(x, n):
+    cont = 0
+    fatorial = 1
+    result = 0
+    final = 0
+
+    while cont < n:
+        c = 1
+        fatorial = 1
+        while c <= n:
+            guarda_fat = fatorial
+            fatorial*=c
+            result += ((x**n) / fatorial )
+            n+=1
+            cont+=1
+            fatorial = guarda_fat
+            fatorial+=1
+            c+=1
+
+        n+=1
+        cont+=1
+
+        final = 1+result
+
+        return final
+
+
+print(calcula_euler(2,3))
+'''
+
+
+# def quantos_uns(x):
+#     return 'x'.count('1')
+
+
+# x = 10391019281
+
+# x.count('1')
+
+# print(x)
+
+# a = 19872131
+
+# print(quantos_uns(str(a)))
+
+
+# print('33445566849'.count('3'))
+
+
+# def quantos_uns(x):
+#     y = 0
+#     if x:
+#         if x[0] == '1':
+#             y += 1
+#         y += quantos_uns(x[1:])
+#     return y
+
+# print(quantos_uns('1232421111'))
+
+
+
+# def junta_nome_sobrenome(x,y):
+#     nova_lista = []
+#     nova_lista.append(x)
+#     nova_lista.append(y)
+#     return nova_lista
+
+
+# a = ['Lister']
+# b = ['Ogusuku']
+
+# print(junta_nome_sobrenome(a, b))
+
